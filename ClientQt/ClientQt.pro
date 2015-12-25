@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2015-01-12T08:26:56
+# Project created by QtCreator 2015-12-25T01:23:01
 #
 #-------------------------------------------------
 
@@ -9,13 +9,24 @@ QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = IvashkinC
+TARGET = ClientQt
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        client.cpp
+        mainwindow.cpp \
+    config.cpp \
+    dateuser.cpp \
+    registr.cpp
 
-HEADERS  += client.h
+HEADERS  += mainwindow.h \
+    config.h \
+    dateuser.h \
+    registr.h
 
-FORMS    += client.ui
+FORMS    += mainwindow.ui \
+    config.ui \
+    dateuser.ui \
+    registr.ui
+
+RESOURCES +=
